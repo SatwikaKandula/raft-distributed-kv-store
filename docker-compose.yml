@@ -1,0 +1,57 @@
+services:
+  node1:
+    build: .
+    command: ["1"]
+    environment:
+      RAFT_DOCKER: "true"
+    ports:
+      - "5001:5001"
+    volumes:
+      - node1-data:/app/data
+
+  node2:
+    build: .
+    command: ["2"]
+    environment:
+      RAFT_DOCKER: "true"
+    ports:
+      - "5002:5002"
+    volumes:
+      - node2-data:/app/data
+
+  node3:
+    build: .
+    command: ["3"]
+    environment:
+      RAFT_DOCKER: "true"
+    ports:
+      - "5003:5003"
+    volumes:
+      - node3-data:/app/data
+
+  node4:
+    build: .
+    command: ["4"]
+    environment:
+      RAFT_DOCKER: "true"
+    ports:
+      - "5004:5004"
+    volumes:
+      - node4-data:/app/data
+
+  node5:
+    build: .
+    command: ["5"]
+    environment:
+      RAFT_DOCKER: "true"
+    ports:
+      - "5005:5005"
+    volumes:
+      - node5-data:/app/data
+
+volumes:
+  node1-data:
+  node2-data:
+  node3-data:
+  node4-data:
+  node5-data:
