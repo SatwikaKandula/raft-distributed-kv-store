@@ -12,40 +12,6 @@ The final implementation was validated using a five-node Docker cluster with uni
 <p align="center">
   <img src="assets/raft-architecture.png" alt="Raft Architecture Diagram" width="100%">
 </p>
-For every committed write:
-
-```text
-Client
-   |
-   v
-Leader appends log entry
-   |
-   v
-Replicate to followers
-   |
-   v
-Majority acknowledges
-   |
-   v
-Leader commits entry
-   |
-   v
-Apply to state machine
-   |
-   v
-Return success to client
-```
-
-The default cluster contains five nodes running on ports `5001` through `5005`.
-
-For a five-node cluster:
-
-```text
-Majority = 3 nodes
-```
-
-A write is considered committed only after it has been replicated to a majority of the cluster.
-
 ---
 
 ## Implemented Raft Features
