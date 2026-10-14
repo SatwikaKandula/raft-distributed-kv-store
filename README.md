@@ -1,6 +1,9 @@
 # Fault-Tolerant Distributed Key-Value Store using Raft
 [![Raft CI](https://github.com/SatwikaKandula/raft-distributed-kv-store/actions/workflows/ci.yml/badge.svg)](https://github.com/SatwikaKandula/raft-distributed-kv-store/actions/workflows/ci.yml)
-
+<h2>Architecture Diagram</h2>
+<p align="center">
+  <img src="assets/raft-architecture.png" alt="Raft Architecture Diagram" width="100%">
+</p>
 A five-node distributed key-value store written in Go that implements the core Raft consensus protocol over gRPC.
 
 The system supports randomized leader election, replicated logs, majority-based commit, persistent state, crash recovery, automatic leader failover, simulated network partitions, snapshot-based log compaction, follower catch-up, and concurrent client requests.
