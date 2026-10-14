@@ -12,7 +12,6 @@ The final implementation was validated using a five-node Docker cluster with uni
 <p align="center">
   <img src="assets/raft-architecture.png" alt="Raft Architecture Diagram" width="100%">
 </p>
----
 
 ## Implemented Raft Features
 
