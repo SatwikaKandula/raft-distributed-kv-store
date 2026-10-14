@@ -1,4 +1,5 @@
 # Fault-Tolerant Distributed Key-Value Store using Raft
+[![Raft CI](https://github.com/SatwikaKandula/raft-distributed-kv-store/actions/workflows/ci.yml/badge.svg)](https://github.com/SatwikaKandula/raft-distributed-kv-store/actions/workflows/ci.yml)
 
 A five-node distributed key-value store written in Go that implements the core Raft consensus protocol over gRPC.
 
