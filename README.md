@@ -8,9 +8,7 @@ The system supports randomized leader election, replicated logs, majority-based 
 The final implementation was validated using a five-node Docker cluster with unit tests, race detection, failure and recovery experiments, snapshot recovery, and throughput/latency benchmarks.
 
 ---
-
-## Architecture
-<h2>Architecture Diagram</h2>
+<h2>Architecture</h2>
 <p align="center">
   <img src="assets/raft-architecture.png" alt="Raft Architecture Diagram" width="100%">
 </p>
